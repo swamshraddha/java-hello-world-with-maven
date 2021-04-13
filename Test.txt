@@ -1,2 +1,4 @@
 Test Integration.
-ebdbgjnjuihuvdjn
+
+
+In Jenkins, go to the project configuration of the project for which you want to run an automated build. In the 'Build Triggers' section, select 'Build when a change is pushed to GitHub'. Save your project. Jenkins will now run the build when you push your code to the GitHub repository.
