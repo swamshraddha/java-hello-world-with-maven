@@ -46,18 +46,20 @@
                     </execution>
                 </executions>
             </plugin>
-            
-     <plugin>
-      <groupId>org.sonatype.plugins</groupId>
-      <artifactId>nexus-staging-maven-plugin</artifactId>
-      <version>1.6.6</version>
-      <extensions>true</extensions>
-      <configuration>
-        <serverId>nexus</serverId>
-        <nexusUrl>http://18.222.165.190:8081/nexus/</nexusUrl>
-      </configuration>
-    </plugin>
-
         </plugins>
+        
+   <distributionManagement>
+  <repository>
+   <id>nexus</id>
+   <name>releases</name>
+   <url>http://18.222.165.190:8081/repository/nexRepo/</url>
+  </repository>
+  <snapshotRepository>
+   <id>nexus</id>
+   <name>snapshots</name>
+   <url>http://18.222.165.1908081/repository/nexRepo/</url>
+  </snapshotRepository>
+ </distributionManagement>
+        
     </build>
 </project>
